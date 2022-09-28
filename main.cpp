@@ -73,7 +73,7 @@ int main()
     else if(( computerPick =='S')||(computerPick =='R'))
      cout <<"you lose"<< endl;
   else
-      cout <<"you win" << endl;
+      cout << Win() << endl;
     }
   if (userPick == 'K')
   {
@@ -82,7 +82,7 @@ int main()
     else if(( computerPick =='P')||(computerPick =='L'))
      cout <<"you lose"<< endl;
   else
-      cout <<"you win" << endl;
+      cout << Win() << endl;
     }
   
   if (userPick == 'S')
@@ -92,7 +92,7 @@ int main()
     else if(( computerPick =='K')||(computerPick =='R'))
      cout <<"you lose"<< endl;
   else
-      cout <<"you win" << endl;
+      cout << Win() << endl;
     }
 
   if (userPick == 'P')
@@ -102,7 +102,7 @@ int main()
     else if(( computerPick =='S')||(computerPick =='L'))
      cout <<"you lose"<< endl;
   else
-      cout <<"you win" << endl;
+      cout << Win() << endl;
     }
     
   
