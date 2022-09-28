@@ -16,6 +16,7 @@ using namespace std;
 //////////////////// Prototype Functions /////////////////////////////////////
 void TranslatePick(int flag_who, char selection);
 char ComputerSelectRPSLK();
+char Win();
 
 //////////////////// MAIN ////////////////////////////////////////////////////
 int main()
@@ -24,7 +25,7 @@ int main()
     char userPick;                  // user's selection for game
     bool valid_pick = false;        // flag controlled while loop for obtaining user input
     char computerPick;              // randomly selected computer selection for game
-    
+    char win;
     
     // Display rules of the game.
     cout << "It's time to play Rock, Paper, Scissors, Lizard, Spock!" << endl;
@@ -56,12 +57,14 @@ int main()
     // HANDOUT (PART A): Determine the winner of the game.
   if (userPick == 'R')
   {
+    win=Win();
+  {
     if (computerPick == 'R')
       cout <<"Tie"<<endl;
     else if(( computerPick =='P')||(computerPick =='K'))
      cout <<"you lose"<< endl;
   else
-      cout <<"you win" << endl;
+      cout <<"you win "<< win << endl;
     }
   
   if (userPick == 'L')
@@ -101,6 +104,7 @@ int main()
      cout <<"you lose"<< endl;
   else
       cout <<"you win" << endl;
+    }
     }
   
   
