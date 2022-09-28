@@ -192,7 +192,42 @@ char ComputerSelectRPSLK()
     }
     
     return randPickChar;
+  }
+
+  
+  char Win()
+{
+    // declare local function variables
+    char randPickChar;
+    int randPick;
+    
+    // pick a random number from 0 to 4
+    srand (time(NULL)); // initialize random seed.
+    randPick = rand() % 5; // gives us 0 to 4
+    //cout << randPick; // uncomment to debug
+    
+    // assign random number to letter
+    switch (randPick)
+    {
+        case 0: 
+            randPickChar = 'R';
+            break;
+        case 1: 
+            randPickChar = 'P';
+            break;
+        case 2: 
+            randPickChar = 'S';
+            break;
+        case 3: 
+            randPickChar = 'L';
+            break;
+        case 4: 
+            randPickChar = 'K';
+            break;
+      }
+  return randPickChar;
 }
+
 
 
 
