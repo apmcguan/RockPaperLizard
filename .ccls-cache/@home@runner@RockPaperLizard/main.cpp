@@ -56,15 +56,14 @@ int main()
     
     // HANDOUT (PART A): Determine the winner of the game.
   if (userPick == 'R')
-  {
-    win=Win();
+  
   {
     if (computerPick == 'R')
       cout <<"Tie"<<endl;
     else if(( computerPick =='P')||(computerPick =='K'))
      cout <<"you lose"<< endl;
   else
-      cout <<"you win "<< win << endl;
+      cout << Win() << endl;
     }
   
   if (userPick == 'L')
@@ -105,7 +104,7 @@ int main()
   else
       cout <<"you win" << endl;
     }
-    }
+    
   
   
   
@@ -220,7 +219,7 @@ char ComputerSelectRPSLK()
             cout<<"You got them"<<endl;
             break;
         case 2: 
-            cout<<"Winner Winner Chicken Dineer"<<endl;
+            cout<<"Winner Winner Chicken Dinner"<<endl;
             break;
         case 3: 
            cout<<" Smoked em"<<endl;
