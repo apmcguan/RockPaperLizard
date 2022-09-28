@@ -73,6 +73,35 @@ int main()
   else
       cout <<"you win" << endl;
     }
+  if (userPick == 'K')
+  {
+    if (computerPick == 'K')
+      cout <<"Tie"<<endl;
+    else if(( computerPick =='P')||(computerPick =='L'))
+     cout <<"you lose"<< endl;
+  else
+      cout <<"you win" << endl;
+    }
+  
+  if (userPick == 'S')
+  {
+    if (computerPick == 'S')
+      cout <<"Tie"<<endl;
+    else if(( computerPick =='K')||(computerPick =='R'))
+     cout <<"you lose"<< endl;
+  else
+      cout <<"you win" << endl;
+    }
+
+  if (userPick == 'P')
+  {
+    if (computerPick == 'P')
+      cout <<"Tie"<<endl;
+    else if(( computerPick =='S')||(computerPick =='L'))
+     cout <<"you lose"<< endl;
+  else
+      cout <<"you win" << endl;
+    }
   
   
   
