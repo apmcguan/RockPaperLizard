@@ -214,19 +214,19 @@ char ComputerSelectRPSLK()
     switch (randPick)
     {
         case 0: 
-            randPickChar = 'R';
+           cout<<" Winner"<<endl;
             break;
         case 1: 
-            randPickChar = 'P';
+            cout<<"You got them"<<endl;
             break;
         case 2: 
-            randPickChar = 'S';
+            cout<<"Winner Winner Chicken Dineer"<<endl;
             break;
         case 3: 
-            randPickChar = 'L';
+           cout<<" Smoked em"<<endl;
             break;
         case 4: 
-            randPickChar = 'K';
+            cout<<" Easy win"<<endl;
             break;
       }
   return randPickChar;
